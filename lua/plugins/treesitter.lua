@@ -1,0 +1,42 @@
+return {
+  -- Treesitter
+  'nvim-treesitter/nvim-treesitter',
+  build = ':TSUpdate',
+  opts = {
+    ensure_installed = {
+      'angular',
+      'awk',
+      'bash',
+      'c',
+      'cmake',
+      'cpp',
+      'c_sharp',
+      'css',
+      'csv',
+      'go',
+      'html',
+      'http',
+      'javascript',
+      'json',
+      'lua',
+      'luadoc',
+      'make',
+      'markdown',
+      'markdown_inline',
+      'python',
+      'ruby',
+      'rust',
+      'sql',
+      'toml',
+      'typescript',
+      'vim',
+      'yaml',
+      'zsh',
+    },
+    sync_install = false,
+    highlight = {
+      -- `false` will disable the whole extension
+      enable = true,
+    },
+  },
+}
