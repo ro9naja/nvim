@@ -1,4 +1,17 @@
 return {
+  -- Snippets
+  {
+    "L3MON4D3/LuaSnip",
+    dependencies = { "rafamadriz/friendly-snippets" },
+    config = function()
+      local ls_status_ok, lsnip = pcall(require, 'luasnip.loaders.from_vscode')
+      if not ls_status_ok then
+        return
+      end
+
+      lsnip.lazy_load()
+    end
+  },
   -- Autocomplete
   {
     'hrsh7th/nvim-cmp',
