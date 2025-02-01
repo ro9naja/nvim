@@ -12,6 +12,10 @@ return {
       lsnip.lazy_load()
     end
   },
+  -- honza/vim-snippets
+  {
+    "honza/vim-snippets",
+  },
   -- Autocomplete
   {
     'hrsh7th/nvim-cmp',
