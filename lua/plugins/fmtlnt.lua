@@ -1,5 +1,5 @@
 return {
-  {
+  --[[ {
     "nvimdev/guard.nvim",
     -- lazy load by ft
     ft = { "lua", "c", "markdown", "python", "rust" },
@@ -29,7 +29,7 @@ return {
       }
     end,
   },
-
+--]]
   --- Comment
   {
     "numToStr/Comment.nvim",
