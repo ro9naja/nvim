@@ -92,6 +92,7 @@ return {
         -- Load sources, see: https://github.com/topics/nvim-cmp
         sources = {
           { name = 'nvim_lsp' },
+          { name = 'codeium' },
           { name = 'luasnip' },
           { name = 'path' },
           { name = 'buffer' },
