@@ -1,6 +1,7 @@
 return {
   -- Icons
   { 'kyazdani42/nvim-web-devicons', lazy = true },
+  { 'echasnovski/mini.nvim', version = '*' },
 
   -- Git Labels
   {
