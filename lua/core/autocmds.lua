@@ -83,7 +83,11 @@ local format_sync_grp = augroup("GoFormat", {})
 autocmd("BufWritePre", {
   pattern = "*.go",
   callback = function()
-    require('go.format').goimports()
+    local status_ok, gf = pcall(require, 'go.format')
+    if not status_ok then
+      return
+    end
+    gf.goimports()
   end,
   group = format_sync_grp,
 })
