@@ -35,13 +35,25 @@ autocmd('BufEnter', {
 })
 
 -- AutoFormating on save
-augroup('AutoFormatting', {})
-autocmd('BufWritePre', {
-  pattern = {'*.lua', '*.py', '*.js', '*.html'},
-  group = 'AutoFormatting',
-  callback = function()
-    vim.lsp.buf.format({ async = true })
-  end,
+-- augroup('AutoFormatting', {})
+-- autocmd('BufWritePre', {
+--   pattern = { '*.lua', '*.py', '*.js', '*.html', '*.css', '*.json', '*.jsonc' },
+--   group = 'AutoFormatting',
+--   callback = function()
+--     vim.lsp.buf.format({ async = true })
+--   end,
+-- })
+
+autocmd('LspAttach', {
+  group = augroup("lsp", { clear = true }),
+  callback = function(args)
+    autocmd("BufWritePre", {
+      buffer = args.buf,
+      callback = function()
+        vim.lsp.buf.format({ async = false, id = args.data.client_id })
+      end,
+    })
+  end
 })
 
 -----------------------------------------------------------

@@ -119,6 +119,7 @@ https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.m
       "jsonls",
       "lua_ls",
       "pylsp",
+      "kotlin_language_server",
       "solidity_ls_nomicfoundation",
       "ts_ls",
       "ruby_lsp",
