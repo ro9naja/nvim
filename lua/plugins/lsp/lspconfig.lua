@@ -117,6 +117,7 @@ https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.m
       "gopls",
       "html",
       "jsonls",
+      "yamlls",
       "lua_ls",
       "pylsp",
       "kotlin_language_server",
