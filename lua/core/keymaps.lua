@@ -51,11 +51,6 @@ map('n', '<leader>q', ':qa!<CR>')
 -----------------------------------------------------------
 -- Applications and Plugins shortcuts
 -----------------------------------------------------------
-
--- Terminal mappings
-map('n', '<C-t>', ':Term<CR>', { noremap = true }) -- open
-map('t', '<Esc>', '<C-\\><C-n>')                   -- exit
-
 -- NvimTree
 map('n', '<C-n>', ':NvimTreeToggle<CR>')       -- open/close
 map('n', '<leader>f', ':NvimTreeRefresh<CR>')  -- refresh
