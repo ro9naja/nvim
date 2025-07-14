@@ -109,7 +109,7 @@ https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.m
     -- map buffer local keybindings when the language server attaches.
     -- Add your language server below:
 
-    vim.lsp.enable('nushell')
+    -- vim.lsp.enable('nushell')
 
     local servers = {
       "bashls",
@@ -127,6 +127,7 @@ https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.m
       "solidity_ls_nomicfoundation",
       "ts_ls",
       "ruby_lsp",
+      "nushell",
     }
 
     -- Call setup
